@@ -27,7 +27,8 @@
   /* --topfloor-base: #F8B427; */
   --topfloor-base: #F8A21B;
   --topfloor-base-rgb: 248, 162, 27;
-  /* --topfloor-black: #151422; */
+  --topfloor-secondary: #1779B8;
+  --topfloor-secondary-rgba: #1779B8;
   --topfloor-black: #151422;
   --topfloor-black-rgb: 21, 20, 34;
   --topfloor-primary: #F4F5FA;
@@ -6200,7 +6201,7 @@ html.lenis {
 .site-footer {
   position: relative;
   display: block;
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-secondary);
   z-index: 1;
 }
 
@@ -6245,10 +6246,14 @@ html.lenis {
   position: relative;
   display: block;
 }
-
 .footer-widget__logo {
   position: relative;
   display: block;
+}
+
+.footer-widget__logo a img{
+  width: 130px;
+  text-align: center;
 }
 
 .footer-widget__about-text {
@@ -6279,7 +6284,7 @@ html.lenis {
   height: 35px;
   font-size: 16px;
   color: var(--topfloor-white);
-  border: 1px solid rgba(33, 31, 54, .80);
+  /* background-color: var(--topfloor-base); */
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: all 500ms ease;
@@ -6292,9 +6297,8 @@ html.lenis {
 }
 
 .footer-widget__social a:hover {
-  color: var(--topfloor-black);
-  background-color: var(--topfloor-base);
-  border: 1px solid transparent;
+  color: var(--topfloor-white);
+  background-color: var(--topfloor-black);  
 }
 
 .footer-widget__social a:after {
@@ -6450,11 +6454,11 @@ html.lenis {
   outline: none;
   font-size: 16px;
   font-weight: 400;
-  color: var(--topfloor-white);
+  color: var(--topfloor-black);
   padding-right: 75px;
   padding-left: 20px;
-  background-color: transparent;
-  border: 1px solid rgba(33, 31, 54, .80);
+  background-color: var(--topfloor-white);
+  /* border: 1px solid rgba(33, 31, 54, .80); */
   border-radius: 5px;
 }
 
@@ -6469,7 +6473,7 @@ html.lenis {
   transition: all 500ms ease;
   padding: 0;
   font-size: 18px;
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6479,7 +6483,7 @@ html.lenis {
 
 .footer-widget__contact-btn:hover {
   color: var(--topfloor-base);
-  background-color: var(--topfloor-white);
+  background-color: var(--topfloor-black);
 }
 
 .site-footer__bottom {
@@ -7124,7 +7128,7 @@ html.lenis {
   gap: 45px;
   color: transparent;
   letter-spacing: -3px;
-  -webkit-text-stroke: 1px #868686;
+  -webkit-text-stroke: 1px #ffffff;
   font-size: 75px;
   line-height: 85px;
   font-weight: 600;
@@ -7167,7 +7171,7 @@ html.lenis {
 .team-two {
   position: relative;
   display: block;
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-secondary);
   padding: 0 0 120px;
   z-index: 1;
 }
@@ -7258,7 +7262,7 @@ html.lenis {
   width: 35px;
   height: 35px;
   font-size: 16px;
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
   background-color: var(--topfloor-base);
   border-radius: 5px;
 }
@@ -7739,7 +7743,7 @@ html.lenis {
 .site-footer-two {
   position: relative;
   display: block;
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-secondary);
   z-index: 1;
 }
 
