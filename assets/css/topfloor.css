@@ -2976,11 +2976,11 @@ html.lenis {
   -webkit-transform-origin: bottom;
   -ms-transform-origin: bottom;
   transform-origin: bottom;
-  -webkit-transition: all 1500ms ease;
-  -moz-transition: all 1500ms ease;
-  -ms-transition: all 1500ms ease;
-  -o-transition: all 1500ms ease;
-  transition: all 1500ms ease;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
   z-index: 1;
 }
 
@@ -3214,6 +3214,9 @@ html.lenis {
 }
 
 .main-slider-two__title {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
   position: relative;
   font-size: 75px;
   color: var(--topfloor-secondary);
@@ -3235,6 +3238,10 @@ html.lenis {
   -ms-transition: all 1500ms ease;
   -o-transition: all 1500ms ease;
   transition: all 1500ms ease;
+}
+
+.main-slider-two__title span{
+  color: var(--topfloor-base) !important;
 }
 
 .main-slider-two .swiper-slide-active .main-slider-two__title {
