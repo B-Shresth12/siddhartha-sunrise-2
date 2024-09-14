@@ -28,6 +28,7 @@
   --topfloor-base: #F8A21B;
   --topfloor-base-rgb: 248, 162, 27;
   --topfloor-secondary: #1779B8;
+  --topfloor-secondary-transparent: #1779B8cc;
   --topfloor-secondary-rgba: #1779B8;
   --topfloor-black: #151422;
   --topfloor-black-transparent: #151422cc;
@@ -3215,7 +3216,7 @@ html.lenis {
 .main-slider-two__title {
   position: relative;
   font-size: 75px;
-  color: var(--topfloor-black);
+  color: var(--topfloor-secondary);
   font-weight: 700;
   line-height: 85px;
   text-transform: capitalize;
@@ -9305,7 +9306,8 @@ html.lenis {
   display: block;
   padding: 80px 0 80px;
   overflow: hidden;
-  background-color: var(--topfloor-base);
+  background-color: var(--topfloor-black);
+  color: white !important;
   z-index: 1;
 }
 
@@ -9339,8 +9341,6 @@ html.lenis {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(248, 180, 39, 1) 100%);
 }
 
 .cta-two__right {
@@ -9353,10 +9353,11 @@ html.lenis {
   font-weight: 600;
   line-height: 58px;
   letter-spacing: -1.92px;
+  color: var(--topfloor-white);
 }
 
 .cta-two__text {
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
   margin-top: 9px;
   margin-bottom: 30px;
 }
@@ -9383,23 +9384,23 @@ html.lenis {
   color: var(--topfloor-black);
   padding-right: 20px;
   padding-left: 20px;
-  background-color: transparent;
-  border: 1px solid var(--topfloor-black);
+  background-color: var(--topfloor-white);
+  border: 1px solid var(--topfloor-white);
   border-radius: 5px;
 }
 
 .cta-two__contact-btn {
   border: none;
   color: var(--topfloor-white);
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-base);
 }
 
-.cta-two__contact-btn:hover {
-  color: var(--topfloor-black);
-}
+/* .cta-two__contact-btn:hover {
+  color: var(--topfloor-white); */
+/* } */
 
 .cta-two__contact-btn::after {
-  background-color: var(--topfloor-white);
+  background-color: var(--topfloor-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -13298,7 +13299,7 @@ html.lenis {
 .service-details__need-help {
   position: relative;
   display: block;
-  background-color: var(--topfloor-base);
+  background-color: var(--topfloor-secondary-transparent);
   padding: 30px 40px 30px;
   border-radius: 5px;
   margin-top: 60px;
@@ -13312,14 +13313,14 @@ html.lenis {
   justify-content: center;
   height: 55px;
   width: 55px;
-  background-color: var(--topfloor-white);
+  background-color: var(--topfloor-base);
   border-radius: 50%;
   font-size: 16px;
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
 }
 
 .service-details__need-help-sub-title {
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
   margin-top: 10px;
   margin-bottom: 9px;
 }
@@ -13333,11 +13334,11 @@ html.lenis {
 }
 
 .service-details__need-help-number a {
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
 }
 
 .service-details__need-help-text {
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
 }
 
 .service-details__brochure-box {
@@ -13378,7 +13379,7 @@ html.lenis {
   position: relative;
   display: inline-block;
   font-size: 40px;
-  color: var(--topfloor-black);
+  color: red;
 }
 
 .service-details__brochure-list li .content {
