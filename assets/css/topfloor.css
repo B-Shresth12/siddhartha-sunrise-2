@@ -30,6 +30,7 @@
   --topfloor-secondary: #1779B8;
   --topfloor-secondary-rgba: #1779B8;
   --topfloor-black: #151422;
+  --topfloor-black-transparent: #151422cc;
   --topfloor-black-rgb: 21, 20, 34;
   --topfloor-primary: #F4F5FA;
   --topfloor-primary-rgb: 244, 245, 250;
@@ -275,7 +276,7 @@ html.lenis {
 }
 
 .section-title__title {
-  color: var(--topfloor-black);
+  color: var(--topfloor-secondary);
   font-size: 48px;
   line-height: 58px;
   font-weight: 600;
@@ -324,7 +325,7 @@ html.lenis {
   height: 150%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-secondary);
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   z-index: -1;
@@ -7079,14 +7080,14 @@ html.lenis {
   width: 60px;
   height: 60px;
   font-size: 20px;
-  color: var(--topfloor-black);
+  color: var(--topfloor-white);
   background-color: var(--topfloor-base);
   border-radius: 50%;
 }
 
 .project-two__arrow a:hover {
-  color: var(--topfloor-base);
-  background-color: var(--topfloor-black);
+  color: var(--topfloor-white);
+  background-color: var(--topfloor-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -7207,7 +7208,7 @@ html.lenis {
 }
 
 .team-two__single:hover .team-two__img img {
-  transform: scale(1.05) rotate(0deg);
+  transform: scale(1.025) rotate(0deg);
 }
 
 .team-two__content {
@@ -7215,10 +7216,10 @@ html.lenis {
   left: 0;
   right: 0;
   bottom: 10px;
-  background-color: var(--topfloor-black);
+  background-color: var(--topfloor-black-transparent);
   border: 1px solid var(--topfloor-base);
   border-radius: 5px;
-  padding: 29px 29px 29px;
+  padding: 10px 28px 10px;
   z-index: 2;
 }
 
